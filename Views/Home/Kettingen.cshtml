@@ -1,0 +1,120 @@
+@{
+    ViewData["Title"] = "Kettingen";
+}
+@section Styles
+{
+    <style>
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    margin-top: 100px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+      transition: margin-left .5s;
+      padding: 16px;
+  }
+
+  media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  }
+  </style>
+}
+
+
+  <!-- Main body -->
+  <div id="main">
+
+    <span id="FilterKnop"style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Filter</span>
+
+    <!-- Container -->
+    <div class="container-fluid">
+
+      <!-- Row -->
+
+        <!-- Column -->
+
+        <div class="container col-lg-offset-1">
+
+          <div class="row">
+            <div class="col-lg-4">
+              <center>
+                <a href=""><img width="300" src="~/images/Sieraad3.jpg"></a>
+                <h4><a style="color:#fff;" href="">Hanger "Alberto della vita"</a></h4>
+                <h4>15.00</h4>
+                <h5><a style="color:#fff;"href="">Aan winkelmandje toevoegen.</a></h5>
+
+
+                  <a href=""><img width="300" src="~/images/Sieraad6.jpg"></a>
+                  <h4><a style="color:#fff;" href="">Hanger "Beschermengel"</a></h4>
+                  <h4>23.00</h4>
+                  <h5><a style="color:#fff;" href="">Aan winkelmandje toevoegen.</a></h5>
+
+
+              </center>
+            </div>
+            <div class="col-lg-4">
+              <center>
+                <a href=""><img width="300" height="200" src="img/Sieraad2.jpg"></a>
+                <h4><a style="color:#fff;" href="">Chakra hanger</a></h4>
+                <h4>17.00</h4>
+                <h5><a style="color:#fff;" href="">Aan winkelmandje toevoegen.</a></h5>
+              </center>
+            </div>
+
+            </div>
+          </div>
+
+
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /#main -->
+  @section Scripts
+  {
+    <script>
+      function openNav() {
+          //document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.getElementById("FilterKnop").style.display = "none";
+      }
+
+      function closeNav() {
+          //document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.getElementById("FilterKnop").style.display = "block";
+      }
+    </script>
+  }
+

@@ -1,0 +1,84 @@
+body {
+    background-color: white;
+}
+.navbar {
+  background-color: #bfbfbf;
+  margin-bottom: 0;
+  border-color: #bfbfbf;
+}
+.nav li{
+		margin-left: 15px;
+    background-color: #41719c;
+}
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+}
+.nav.navbar-nav.navbar-left li a {
+    color: white;
+}
+.mobile{
+  visibility: hidden;
+}
+#main {
+  background-color: #41719c;
+}
+#footer {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.shopping-grid{
+  background-color: white;
+}
+
+#nav2 {
+  background-color: #b5b3b3;
+}
+
+
+.horizontal {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+  float: left;
+}
+.horizontal li{
+  background-color: transparent;
+}
+
+@media (max-width: 768px){
+  .nav li{
+    margin-left: 0px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+  }
+  .mobile{
+    visibility: visible;
+    background-color: transparent;
+  }
+  #nav2{
+    display: none;
+  }
+}
+/*
+.Page
+{
+  display: flex;
+}
+*/
+.line{
+  width: 1px; /* Line width */
+      background-color: black; /* Line color */
+      height: 80px; /* Override in-line if you want specific height. */
+}
+
+.dropdown-menu {
+  background-color: #41719c;
+}
+
+
+/* Searchbar and button allignment */
+.form-inline {
+  margin-top: 8px;
+}
+

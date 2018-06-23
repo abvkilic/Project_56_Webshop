@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ShopMeisterBE_MASTER</title>
+    @RenderSection("Styles",required: false)
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <script src="https://use.fontawesome.com/d90351b3ae.js"></script>
+    </environment>
+
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <script src="https://use.fontawesome.com/d90351b3ae.js"></script>
+    </environment>      
+</head>
+<body>
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+
+    <!-- Container FLuid -->
+    <div class="container-fluid">
+
+      <!-- Navbar Header -->
+      <div class="navbar-header">
+
+        <!-- Toggle -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Shop Meister</a>
+      </div>
+
+      <!-- Navbar Collapse -->
+      <div id="navbar" class="navbar-collapse collapse">
+
+        <!-- Nav list -->
+        <ul class="nav navbar-nav navbar-right">
+
+          <li class="mobile"><a asp-area="" asp-controller="Home" asp-action="Index">Edelstenen <span class="sr-only">(current)</span></a></li>
+
+          <!--Sieraden-->
+          <li class="dropdown mobile">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sieraden <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a asp-area="" asp-controller="Home" asp-action="Armbanden">Armbanden</a></li>
+              <li><a asp-area="" asp-controller="Home" asp-action="Kettingen">Kettingen & Hangers</a></li>
+            </ul>
+          </li>
+
+          <!-- Workshops-->
+          <li class="dropdown mobile">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Workshops <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a asp-area="" asp-controller="Product" asp-action="CreateOne">Country Armband</a></li>
+              <li><a href="#">Ketting of Armband</a></li>
+              <li><a href="#">"Albero Della Vita" (Levensboom)</a></li>
+              <li><a href="#">Recycle voor kids</a></li>
+              <li><a href="#">Beschermengel hanger</a></li>
+              <li><a href="#">Valentijn workshop</a></li>
+            </ul>
+          </li>
+          <li class="mobile"><a asp-area="" asp-controller="Home" asp-action="Over_Ons">Over ons</a></li>
+          <li class="mobile"><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+
+          <!-- Shopping Cart -->
+          <li><a href="#">Shopping cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+          <!-- Profile -->
+          <!-- Profile icon -->
+          <li class="inactive dropdown">
+            <a  href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+            <ul class="dropdown-menu">
+              <li><a asp-area="" asp-controller="Home" asp-action="Login" >Log In</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav><!-- /.nav -->
+
+  <!-- Row -->
+  <div id="nav2" class="row">
+    <!-- Nav list -->
+    <ul class="nav navbar-nav horizontal navbar-left">
+      <!-- List items -->
+      <li><a asp-area="" asp-controller="Home" asp-action="Edelstenen">Edelstenen <span class="sr-only">(current)</span></a></li>
+
+      <!--Sieraden-->
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sieraden <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a asp-area="" asp-controller="Home" asp-action="Armbanden">Armbanden</a></li>
+          <li><a asp-area="" asp-controller="Home" asp-action="Kettingen">Kettingen & Hangers</a></li>
+        </ul>
+      </li>
+
+      <!-- Workshops-->
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Workshops <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Country Armband</a></li>
+          <li><a href="#">Ketting of Armband</a></li>
+          <li><a href="#">"Albero Della Vita" (Levensboom)</a></li>
+          <li><a href="#">Recycle voor kids</a></li>
+          <li><a href="#">Beschermengel hanger</a></li>
+          <li><a href="#">Valentijn workshop</a></li>
+        </ul>
+      </li>
+      <li><a asp-area="" asp-controller="Home" asp-action="Over_Ons">Over ons</a></li>
+      <li class="active"><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+    </ul><!-- /.nav list -->
+
+    <!-- Nav list -->
+    <ul style="margin-right: 5px;" class="nav navbar-nav horizontal navbar-right">
+      <!-- List items -->
+
+    <!-- Zoekbar en knop-->
+      <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    </ul><!-- /.nav list -->
+
+  </div><!-- /.row -->
+
+        @RenderBody()
+        
+        <hr />
+        
+        
+         <!-- Footer -->
+      <div id="footer">
+        <!-- Container -->
+        <div class="container">
+          <!-- Column -->
+          <div class="col-lg-10 col-lg-offset-1 text-center">
+            <h4><strong>Shopmeister</strong></h4>
+            <p>Shop like a meister</p>
+            <hr style="border:1px solid #41719c; width: 80%;">
+            <h5>Copyright © shopmeister.nl 2017</h5>
+          </div><!-- /.col -->
+        </div><!-- /.container -->
+      </div><!-- /#footer -->
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

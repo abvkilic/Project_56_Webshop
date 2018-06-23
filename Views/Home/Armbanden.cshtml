@@ -1,0 +1,364 @@
+@{
+    ViewData["Title"] = "Armbanden";
+}
+
+@section Styles
+{
+    <style>
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    margin-top: 102px;
+    color: black;
+  }
+  .main{
+    background-color: white;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: gray;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+      transition: margin-left .5s;
+      padding: 16px;
+  }
+
+  media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  }
+</style>
+}
+  <!-- Main body -->
+  <div id="main">
+
+    <span id="FilterKnop"style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Filter</span>
+
+    <!-- Container -->
+    <div class="container">
+
+      <!-- Row -->
+      <div class="row">
+
+        <!-- Column -->
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <!-- Shopping Grid Item -->
+          <div class="shopping-grid">
+            <!-- Image -->
+            <a href="#">
+              <img class="img-responsive img-thumbnail" src="~/images/Armbanden.jpg">
+            </a><!-- /.img -->
+            <!-- Caption content -->
+            <div class = "caption text-center">
+              <!-- Content Header -->
+              <h3>Thumbnail label</h3>
+              <!-- Content paragraph -->
+              <p>Some sample text. Some sample text.</p>
+              <!-- Content Buttons -->
+              <p>
+                <a href = "#" class = "btn btn-primary" role = "button">
+                  Button
+                </a>
+
+                <a href = "#" class = "btn btn-default" role = "button">
+                  Button
+                </a>
+              </p><!-- /.content buttons -->
+            </div><!-- /.caption -->
+          </div><!-- /.shopping-grid -->
+        </div><!-- /.col -->
+
+        <!-- Column -->
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <!-- Shopping Grid Item -->
+          <div class="shopping-grid">
+            <!-- Image -->
+            <a href="#">
+              <img class="img-responsive img-thumbnail" src="~/images/Armbanden.jpg">
+            </a><!-- /.img -->
+            <!-- Caption content -->
+            <div class = "caption text-center">
+              <!-- Content Header -->
+              <h3>Thumbnail label</h3>
+              <!-- Content paragraph -->
+              <p>Some sample text. Some sample text.</p>
+              <!-- Content Buttons -->
+              <p>
+                <a href = "#" class = "btn btn-primary" role = "button">
+                  Button
+                </a>
+
+                <a href = "#" class = "btn btn-default" role = "button">
+                  Button
+                </a>
+              </p><!-- /.content buttons -->
+            </div><!-- /.caption -->
+          </div><!-- /.shopping-grid -->
+        </div><!-- /.col -->
+
+        <!-- Column -->
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <!-- Shopping Grid Item -->
+          <div class="shopping-grid">
+            <!-- Image -->
+            <a href="#">
+              <img class="img-responsive img-thumbnail" src="~/images/Armbanden.jpg">
+            </a><!-- /.img -->
+            <!-- Caption content -->
+            <div class = "caption text-center">
+              <!-- Content Header -->
+              <h3>Thumbnail label</h3>
+              <!-- Content paragraph -->
+              <p>Some sample text. Some sample text.</p>
+              <!-- Content Buttons -->
+              <p>
+                <a href = "#" class = "btn btn-primary" role = "button">
+                  Button
+                </a>
+
+                <a href = "#" class = "btn btn-default" role = "button">
+                  Button
+                </a>
+              </p><!-- /.content buttons -->
+            </div><!-- /.caption -->
+          </div><!-- /.shopping-grid -->
+        </div><!-- /.col -->
+
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+    <!-- Container -->
+    <br>
+    <div class="container">
+
+      <!-- Row -->
+      <div class="row">
+
+        <!-- Column -->
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <!-- Shopping Grid Item -->
+          <div class="shopping-grid">
+            <!-- Image -->
+            <a href="#">
+              <img class="img-responsive img-thumbnail" src="~/images/Armbanden.jpg">
+            </a><!-- /.img -->
+            <!-- Caption content -->
+            <div class = "caption text-center">
+              <!-- Content Header -->
+              <h3>Thumbnail label</h3>
+              <!-- Content paragraph -->
+              <p>Some sample text. Some sample text.</p>
+              <!-- Content Buttons -->
+              <p>
+                <a href = "#" class = "btn btn-primary" role = "button">
+                  Button
+                </a>
+
+                <a href = "#" class = "btn btn-default" role = "button">
+                  Button
+                </a>
+              </p><!-- /.content buttons -->
+            </div><!-- /.caption -->
+          </div><!-- /.shopping-grid -->
+        </div><!-- /.col -->
+
+        <!-- Column -->
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <!-- Shopping Grid Item -->
+          <div class="shopping-grid">
+            <!-- Image -->
+            <a href="#">
+              <img class="img-responsive img-thumbnail" src="~/images/Armbanden.jpg">
+            </a><!-- /.img -->
+            <!-- Caption content -->
+            <div class = "caption text-center">
+              <!-- Content Header -->
+              <h3>Thumbnail label</h3>
+              <!-- Content paragraph -->
+              <p>Some sample text. Some sample text.</p>
+              <!-- Content Buttons -->
+              <p>
+                <a href = "#" class = "btn btn-primary" role = "button">
+                  Button
+                </a>
+
+                <a href = "#" class = "btn btn-default" role = "button">
+                  Button
+                </a>
+              </p><!-- /.content buttons -->
+            </div><!-- /.caption -->
+          </div><!-- /.shopping-grid -->
+        </div><!-- /.col -->
+
+        <!-- Column -->
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <!-- Shopping Grid Item -->
+          <div class="shopping-grid">
+            <!-- Image -->
+            <a href="#">
+              <img class="img-responsive img-thumbnail" src="~/images/Armbanden.jpg">
+            </a><!-- /.img -->
+            <!-- Caption content -->
+            <div class = "caption text-center">
+              <!-- Content Header -->
+              <h3>Thumbnail label</h3>
+              <!-- Content paragraph -->
+              <p>Some sample text. Some sample text.</p>
+              <!-- Content Buttons -->
+              <p>
+                <a href = "#" class = "btn btn-primary" role = "button">
+                  Button
+                </a>
+
+                <a href = "#" class = "btn btn-default" role = "button">
+                  Button
+                </a>
+              </p><!-- /.content buttons -->
+            </div><!-- /.caption -->
+          </div><!-- /.shopping-grid -->
+        </div><!-- /.col -->
+
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+    <br>
+    <!-- Container -->
+    <div class="container">
+
+      <!-- Row -->
+      <div class="row">
+
+        <!-- Column -->
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <!-- Shopping Grid Item -->
+          <div class="shopping-grid">
+            <!-- Image -->
+            <a href="#">
+              <img class="img-responsive img-thumbnail" src="~/images/Armbanden.jpg">
+            </a><!-- /.img -->
+            <!-- Caption content -->
+            <div class = "caption text-center">
+              <!-- Content Header -->
+              <h3>Thumbnail label</h3>
+              <!-- Content paragraph -->
+              <p>Some sample text. Some sample text.</p>
+              <!-- Content Buttons -->
+              <p>
+                <a href = "#" class = "btn btn-primary" role = "button">
+                  Button
+                </a>
+
+                <a href = "#" class = "btn btn-default" role = "button">
+                  Button
+                </a>
+              </p><!-- /.content buttons -->
+            </div><!-- /.caption -->
+          </div><!-- /.shopping-grid -->
+        </div><!-- /.col -->
+
+        <!-- Column -->
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <!-- Shopping Grid Item -->
+          <div class="shopping-grid">
+            <!-- Image -->
+            <a href="#">
+              <img class="img-responsive img-thumbnail" src="~/images/Armbanden.jpg">
+            </a><!-- /.img -->
+            <!-- Caption content -->
+            <div class = "caption text-center">
+              <!-- Content Header -->
+              <h3>Thumbnail label</h3>
+              <!-- Content paragraph -->
+              <p>Some sample text. Some sample text.</p>
+              <!-- Content Buttons -->
+              <p>
+                <a href = "#" class = "btn btn-primary" role = "button">
+                  Button
+                </a>
+
+                <a href = "#" class = "btn btn-default" role = "button">
+                  Button
+                </a>
+              </p><!-- /.content buttons -->
+            </div><!-- /.caption -->
+          </div><!-- /.shopping-grid -->
+        </div><!-- /.col -->
+
+        <!-- Column -->
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <!-- Shopping Grid Item -->
+          <div class="shopping-grid">
+            <!-- Image -->
+            <a href="#">
+              <img class="img-responsive img-thumbnail" src="~/images/Armbanden.jpg">
+            </a><!-- /.img -->
+            <!-- Caption content -->
+            <div class = "caption text-center">
+              <!-- Content Header -->
+              <h3>Thumbnail label</h3>
+              <!-- Content paragraph -->
+              <p>Some sample text. Some sample text.</p>
+              <!-- Content Buttons -->
+              <p>
+                <a href = "#" class = "btn btn-primary" role = "button">
+                  Button
+                </a>
+
+                <a href = "#" class = "btn btn-default" role = "button">
+                  Button
+                </a>
+              </p><!-- /.content buttons -->
+            </div><!-- /.caption -->
+          </div><!-- /.shopping-grid -->
+        </div><!-- /.col -->
+
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div>
+  @section Scripts
+{
+  <script>
+  function openNav() {
+      //document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.getElementById("FilterKnop").style.display = "none";
+  }
+
+  function closeNav() {
+      //document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.getElementById("FilterKnop").style.display = "block";
+  }
+
+  </script>
+}
+ 
+ 
